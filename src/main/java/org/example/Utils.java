@@ -2,8 +2,9 @@ package org.example;
 
 import java.util.ArrayList;
 
-public class BaseTestUtil {
+public class Utils {
     static String[] lst = {"S1", "S2", "S3", "S4"};
+
     public static ArrayList<String> playThreeSongs(){
         ArrayList<String> emp=new ArrayList<>();
         for(int i=0; i<3; i++){

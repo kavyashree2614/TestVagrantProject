@@ -1,18 +1,16 @@
 package org.example;
 
-import com.sun.javafx.util.Utils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 
-public class LoopPlaylist extends BaseTestUtil {
+public class LoopPlaylist extends Utils {
 
-
-   @Test
+    @Test
     public void verifyUserHasPlayed3Songs() {
-       System.out.println("user has played 3 songs "+ playThreeSongs());
-       Assert.assertEquals(playThreeSongs().size(),3);
+        System.out.println("user has played 3 songs "+ playThreeSongs());
+        Assert.assertEquals(playThreeSongs().size(),3);
     }
 
     @Test
@@ -33,4 +31,5 @@ public class LoopPlaylist extends BaseTestUtil {
         ArrayList<String> s1 = songList("S1",s2 );
         Assert.assertEquals(s1.toArray(),expectedLists1);
     }
+
 }
